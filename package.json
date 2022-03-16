@@ -29,7 +29,7 @@
   "author": "igor.rafael@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "br-validations": "git://github.com/compufour/br-validations#01789ade76da5dc543122d8e9e2548babcacd9ec",
+    "br-validations": "https://github.com/compufour/br-validations#01789ade76da5dc543122d8e9e2548babcacd9ec",
     "date-fns": "2.0.0-alpha.7",
     "string-mask": "^0.3.0"
   },
