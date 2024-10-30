@@ -17,7 +17,9 @@ m.factory('PreFormatters', [function() {
 	}
 
 	function prepareNumberToFormatter(value, decimals) {
-		return clearDelimitersAndLeadingZeros((parseFloat(value)).toFixed(decimals));
+		const factor = Math.pow(10, decimals);
+		const formattedValue = (Math.round((parseFloat(value) + Number.EPSILON) * factor) / factor).toFixed(decimals);
+		return clearDelimitersAndLeadingZeros(formattedValue);
 	}
 
 	return {
